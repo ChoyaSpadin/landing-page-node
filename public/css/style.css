@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline: none;
   font-family: "Roboto", sans-serif;
@@ -46,11 +46,10 @@ span#close:hover {
 header {
   width: 100%;
   height: 300px;
-  background: #f78b00;
+  background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
 }
 
 .sumário {
-  /* abordagem responsiva */
   max-width: 1000px;
   min-width: 300px;
   margin: 0 auto;
@@ -70,7 +69,7 @@ nav {
 
 .título {
   font-size: 24px;
-  color: #00285f;
+  color: white;
   cursor: pointer;
 }
 
@@ -86,12 +85,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #00285f;
+  color: white;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #00285f83;
+  color: white;
 }
 
 .sumário .bloco {
@@ -155,8 +154,8 @@ a.cartão {
   justify-content: center;
   cursor: pointer;
   transition: transform 0.5s;
-  background-color: #00285f;
-  color: white;
+  background-color: #F3F2F3;
+  color: black;
   text-decoration: none;
 }
 
@@ -173,7 +172,7 @@ a.cartão h2 {
   width: 100%;
   text-align: center;
   padding: 2rem;
-  color: white;
+  color: black;
 }
 
 #pokedex {
@@ -190,7 +189,6 @@ a.cartão h2 {
 #header-2 {
   width: 100%;
   height: 150px;
-  background: #f78b00;
 }
 
 #cadastro {
@@ -246,7 +244,6 @@ a.cartão h2 {
 #header-3 {
   width: 100%;
   height: 150px;
-  background: #f78b00;
 }
 
 .detalhes {
@@ -306,8 +303,10 @@ footer .principal {
 footer .final {
   width: 100%;
   height: 50px;
-  background: #00285f;
-  color: white;
+  background: #F3F2F3;
+  background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+  color: black;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;

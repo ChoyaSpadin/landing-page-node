@@ -10,7 +10,7 @@ app.use(express.urlencoded());
 
 let Pokedex = [
   {
-    Numero: 001,
+    Numero: "001",
     Nome: "Bulbasaur",
     Tipo: "Grass / Poison",
     Imagem: "/img/Bulbasaur.png",
@@ -22,7 +22,7 @@ let Pokedex = [
     Habilidade: "Overgrow",
   },
   {
-    Numero: 004,
+    Numero: "004",
     Nome: "Charmander",
     Tipo: "Fire",
     Imagem: "/img/004.png",
@@ -34,7 +34,7 @@ let Pokedex = [
     Habilidade: "Blaze",
   },
   {
-    Numero: 007,
+    Numero: "007",
     Nome: "Squirtle",
     Tipo: "Water",
     Imagem: "/img/007.png",
@@ -43,7 +43,6 @@ let Pokedex = [
     Altura: "0.5m",
     Peso: "9.0kg",
     Categoria: "Tiny Turtle",
-    Habilidade: "Torrent",
     Habilidade: "Torrent",
   },
 ];
