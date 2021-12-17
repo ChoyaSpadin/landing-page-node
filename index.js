@@ -83,8 +83,8 @@ app.get("/cadastro", (req, res) => {
 
 app.get("/detalhes/:id", (req, res) => {
   const indice = req.params.id;
-  const pokemon = Pokedex[indice];
-  res.render("detalhes", { pokemon: pokemon });
+  const champions = Champions[indice];
+  res.render("detalhes", { champion: champions });
 });
 
 app.post("/new", (req, res) => {
