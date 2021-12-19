@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <% if(mensagem != "") {  %>
+    <% if(mensagem !== "") {  %>
         <section id="mensagem">
             <p><%= mensagem %></p> <span id="close">&times;</span>
         </section>
@@ -34,7 +34,7 @@
 <section class="catálogo">
     <div id="Champions">
         <% champions.forEach((item, index)=> { %>
-            <a class="cartão" href="/detalhes/<%= index %>">
+            <a class="cartão" href="/detalhes/<%= item.id %>">
                 <img src="<%= item.Imagem %>">
                 <h2><%= item.name_ %></h2>
                 <h4><%= item.role_ %></h4>

@@ -62,7 +62,7 @@ const Champions = require("./models/champions");
 
 app.get("/", async (req, res) => {
   const champions = await Champions.findAll();
-  console.log( champions  )
+  console.log(champions);
   setTimeout(() => {
     mensagem = ``;
   }, 1000);
@@ -81,10 +81,9 @@ app.get("/cadastro", (req, res) => {
   res.render("cadastro");
 });
 
-app.get("/detalhes/:id", (req, res) => {
-  const indice = req.params.id;
-  const champions = Champions[indice];
-  res.render("detalhes", { champion: champions });
+app.get("/detalhes/:id", async (req, res) => {
+  const champions = await Champions.findByPk(req.params.id);
+  res.render("detalhes", { champions: champions });
 });
 
 app.post("/new", (req, res) => {
